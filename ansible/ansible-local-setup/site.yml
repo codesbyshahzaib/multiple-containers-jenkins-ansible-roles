@@ -1,0 +1,10 @@
+---
+- name: Install Docker, Docker Compose, and Nginx
+  hosts: local
+  become: true
+  gather_facts: true
+
+  roles:
+    - docker
+    - docker_compose
+    - nginx
